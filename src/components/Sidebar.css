@@ -1,0 +1,60 @@
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.theme-switch {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.theme-switch button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li i {
+  margin-right: 10px;
+}
+
+nav ul li.active,
+nav ul li:hover {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 4px;
+}
