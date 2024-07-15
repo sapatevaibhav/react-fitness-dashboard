@@ -7,7 +7,6 @@
 .main-content {
   flex: 1;
   background-color: #d1cece6b;
-  padding: 20px;
 }
 
 .charts {
@@ -22,12 +21,14 @@
 }
 
 .goals-chart {
-  padding: 20px;
+  padding: 15px;
+  margin: 30px;
 }
 
 .progress-chart {
   height: 315px;
   padding-left: 30px;
+  margin: 30px;
 }
 
 .goals-chart h2 {

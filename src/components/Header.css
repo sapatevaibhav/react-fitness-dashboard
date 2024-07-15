@@ -2,56 +2,72 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  padding: 10px 20px;
+  background-color: #fff;
+  padding: 10px 5%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  height: 55px;
 }
-
+.greeting {
+  flex: 1;
+}
 .greeting h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
-
 .greeting p {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #777;
 }
-
+.date-time,
+.noti,
 .search-bar {
   display: flex;
   align-items: center;
+  margin-left: 20px;
 }
-
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 .search-bar input {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
+  padding: 8px 40px 8px 12px;
+  background-color: #8ec9c3;
+  height: 13px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  outline: 0;
+  width: 200px;
+  max-width: 100%;
 }
-
-.search-bar button {
-  background-color: #6cc6c0;
-  border: none;
-  padding: 5px;
-  margin-left: 5px;
-  border-radius: 4px;
+.search-icon {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 10px;
   cursor: pointer;
 }
-
-.date-time {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
 .date-time span {
-  font-size: 14px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(202, 201, 201, 0.342);
 }
-
+.user-profile {
+  margin-left: 20px;
+}
 .user-image {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  cursor: pointer;
+}
+.noti {
+  margin-left: 10px;
+}
+.noti-image {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
