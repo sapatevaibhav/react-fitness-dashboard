@@ -9,22 +9,22 @@ function Sidebar() {
         <span>fito</span>
       </div>
       <div className="theme-switch">
-        <button>Light</button>
-        <button>Dark</button>
+        <button className='light'>Light</button>
+        <button className='dark'>Dark</button>
       </div>
       <nav>
         <ul>
           <li>
-            <i className="fa fa-tachometer"></i> Dashboard
+            <img src="assets/dashboard.svg" alt="dash" className='sidebar-image' /> Dashboard
           </li>
           <li>
-            <i className="fa fa-heartbeat"></i> Workouts
+          <img src="assets/dumbell.svg" alt="dash" className='sidebar-image' /> Workouts
           </li>
           <li className="active">
-            <i className="fa fa-flag"></i> Goals
+          <img src="assets/goal.svg" alt="dash" className='sidebar-image' /> Goals
           </li>
           <li>
-            <i className="fa fa-user"></i> Profile
+          <img src="assets/profile.svg" alt="dash" className='sidebar-image' /> Profile
           </li>
         </ul>
       </nav>
