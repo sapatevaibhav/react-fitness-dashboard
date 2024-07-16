@@ -21,7 +21,7 @@
 }
 
 .goals-chart {
-  padding: 15px;
+  /* padding: 15px; */
   margin: 30px;
 }
 
@@ -37,20 +37,20 @@
   align-items: center;
 }
 
-h2 {
+.header-2 {
   margin: 0;
   padding-left: 25px;
   padding-bottom: 15px;
 }
 
-.goals-chart button {
+/* .goals-chart button {
   background-color: #2d7a78;
   color: #ffffff;
   border: none;
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
-}
+} */
 
 .main-chart {
   margin-left: 25px;

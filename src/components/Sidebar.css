@@ -18,6 +18,7 @@ nav ul li i {
 nav,
 nav ul,
 nav ul li {
+  cursor: pointer;
   width: 100%;
 }
 .logo {
