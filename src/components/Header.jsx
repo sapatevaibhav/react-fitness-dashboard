@@ -1,15 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import './Header.css';
+import React, { useState, useEffect } from "react";
+import "./Header.css";
 
 function Header() {
-  const [currentDate, setCurrentDate] = useState('');
-  const [currentTime, setCurrentTime] = useState('');
+  const [currentDate, setCurrentDate] = useState("");
+  const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
-      const date = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-      const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+      const date = now.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      });
+      const time = now.toLocaleTimeString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+      });
       setCurrentDate(date);
       setCurrentTime(time);
     }, 1000);
@@ -30,8 +38,12 @@ function Header() {
         </div>
       </div>
       <div className="date-time noti">
-        <span>{currentDate}</span> <span>{currentTime}</span>
-        <img src="/assets/notification.svg" alt="notification" className="noti-image" />
+        <span>{currentDate}</span> <span className="time">{currentTime}</span>
+        <img
+          src="/assets/notification.svg"
+          alt="notification"
+          className="noti-image"
+        />
       </div>
       <div className="user-profile">
         <img src="/assets/user.png" alt="User" className="user-image" />

@@ -7,18 +7,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 55px;
 }
+
 .greeting {
   flex: 1;
 }
+
 .greeting h1 {
   margin: 0;
-  font-size: 1.5rem;
 }
+
 .greeting p {
   margin: 0;
   font-size: 0.875rem;
   color: #777;
 }
+
 .date-time,
 .noti,
 .search-bar {
@@ -26,11 +29,13 @@
   align-items: center;
   margin-left: 20px;
 }
+
 .search-input-wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
+
 .search-bar input {
   padding: 8px 40px 8px 12px;
   background-color: #8ec9c3;
@@ -41,6 +46,7 @@
   width: 200px;
   max-width: 100%;
 }
+
 .search-icon {
   width: 17px;
   height: 17px;
@@ -48,26 +54,75 @@
   right: 10px;
   cursor: pointer;
 }
+
 .date-time span {
   margin-right: 10px;
   padding: 5px;
   border-radius: 5px;
   background-color: rgba(202, 201, 201, 0.342);
 }
+
 .user-profile {
   margin-left: 20px;
 }
+
 .user-image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
 }
+
 .noti {
   margin-left: 10px;
 }
+
 .noti-image {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .greeting {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .greeting {
+    font-size: 0.5rem;
+  }
+  .greeting p {
+    display: none;
+  }
+  .greeting p {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .greeting {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5rem;
+  }
+  .greeting p {
+    display: none;
+  }
+  .greeting h1 {
+    margin-right: 10px;
+  }
+  .search-bar input {
+    width: 80px;
+  }
+  .header {
+    padding: 5px 5%;
+  }
+  .time {
+    display: none;
+  }
+  .date-time span {
+    padding: 3px;
+  }
 }
