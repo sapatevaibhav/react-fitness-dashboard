@@ -8,7 +8,6 @@ nav ul li i {
   margin-right: 10px;
 }
 .sidebar {
-  min-width: 280px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -79,11 +78,15 @@ nav ul li:hover {
   .sidebar-image {
     width: 30px;
   }
+  .sidebar {
+    min-width: 280px;
+  }
 }
 
 @media (max-width: 1024px) {
   .sidebar {
     width: 220px;
+    min-width: 220px;
   }
   .logo img {
     width: 50px;
@@ -108,7 +111,8 @@ nav ul li:hover {
 }
 @media (max-width: 768px) {
   .sidebar {
-    width: 180px;
+    width: 160px;
+    min-width: 160px;
   }
   .logo img {
     width: 40px;

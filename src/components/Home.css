@@ -30,7 +30,7 @@
   flex: 1;
   margin-top: 60px;
   overflow-y: auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 .charts {
@@ -39,19 +39,22 @@
 
 .charts > div {
   background-color: #ffffff;
-  /* padding: 20px; */
   border-radius: 25px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.goals-chart,
+.progress-chart {
+  padding: 20px;
 }
 
 .goals-chart {
-  margin: 30px;
+  margin-top: 30px;
 }
 
 .progress-chart {
   height: 315px;
   padding-left: 30px;
-  margin: 30px;
 }
 
 .header-2 {
@@ -68,7 +71,7 @@
 
 @media (max-width: 1024px) {
   .main-content-wrapper {
-    margin-left: 0px;
+    margin-left: 30px;
   }
   .header {
     left: 220px;
@@ -77,18 +80,18 @@
 
 @media (max-width: 768px) {
   .main-content-wrapper {
-    margin-left: -30px;
+    margin-left: -10px;
   }
   .header {
-    left: 116px;
+    left: 160px;
   }
 }
 
 @media (max-width: 480px) {
   .main-content-wrapper {
-    margin-left: -30px;
+    margin-left: -20px;
   }
   .header {
-    left: 115px;
+    left: 160px;
   }
 }
