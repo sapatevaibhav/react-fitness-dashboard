@@ -8,7 +8,7 @@ nav ul li i {
   margin-right: 10px;
 }
 .sidebar {
-  width: 280px;
+  min-width: 280px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
