@@ -39,7 +39,7 @@
 
 .charts > div {
   background-color: #ffffff;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 25px;
   margin-bottom: 20px;
 }
