@@ -1,0 +1,64 @@
+.chart-wrapper {
+  background-color: #e4e4e4;
+  padding: 0 0 25px;
+}
+.bottom-map,
+.calendar-wrapper,
+.chart-container {
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.middle-charts,
+.top-charts {
+  display: flex;
+  gap: 20px;
+}
+.middle-charts > div,
+.top-charts > div {
+  flex: 1;
+}
+.calendar-wrapper,
+.chart-container {
+  background-color: #fff;
+  padding: 20px;
+}
+.bottom-map {
+  height: 300px;
+  overflow: hidden;
+}
+.total-workout-chart {
+  position: relative;
+  max-width: 250px;
+  max-height: 250px;
+  height: 160px !important;
+  width: 160px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+.total-workout-chart canvas {
+  padding-bottom: 15px;
+}
+.chart-container h3 {
+  text-align: start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.charts {
+  background-color: #e4e4e4;
+}
+.workout-text {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  margin-top: -20px;
+  line-height: 19px;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 700;
+  color: #158b7e;
+}
