@@ -38,7 +38,8 @@ function Header() {
         </div>
       </div>
       <div className="date-time noti">
-        <span>{currentDate}</span> <span className="time">{currentTime}</span>
+        <span className="date">{currentDate}</span>{" "}
+        <span className="time">{currentTime}</span>
         <img
           src="/assets/notification.svg"
           alt="notification"

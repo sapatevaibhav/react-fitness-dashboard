@@ -89,13 +89,30 @@
   }
 }
 
-@media (max-width: 768px) {
-  .greeting {
-    font-size: 0.5rem;
+@media (max-width: 1110px) {
+  .greeting h1 {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 785px) {
+  .greeting h1 {
+    font-size: 3vw;
   }
   .greeting p {
     display: none;
   }
+}
+
+@media (max-width: 558px) {
+  .greeting h1 {
+    font-size: 4vw;
+  }
+
+  .greeting p {
+    display: none;
+  }
+
   .greeting p {
     display: none;
   }
@@ -107,19 +124,38 @@
     flex-direction: row;
     font-size: 0.5rem;
   }
+
   .greeting p {
     display: none;
   }
+
   .greeting h1 {
     margin-right: 10px;
   }
+
   .search-bar input {
     width: 80px;
   }
+
   .time {
     display: none;
   }
+
   .date-time span {
     padding: 3px;
+  }
+}
+
+@media (max-width: 430px) {
+  .header h1 {
+    margin: 0;
+  }
+
+  .date {
+    display: none;
+  }
+
+  .user-profile {
+    margin-left: 0px;
   }
 }
