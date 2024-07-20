@@ -162,3 +162,9 @@ nav ul li:hover {
     width: 15px;
   }
 }
+@media (max-width: 430px) {
+  .sidebar {
+    width: 140px;
+    min-width: 120px;
+  }
+}
