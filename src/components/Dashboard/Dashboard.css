@@ -1,31 +1,36 @@
+.calendar-day-name,
+.workout-text {
+  font-weight: 700;
+}
+
 .chart-wrapper {
   background-color: #e4e4e4;
-  padding: 0 0 25px
+  padding: 0 0 25px;
 }
 
 .bottom-map,
 .calendar-wrapper,
 .chart-container {
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .middle-charts,
 .top-charts {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .calendar-wrapper,
 .chart-container {
   background-color: #fff;
-  padding: 20px
+  padding: 20px;
 }
 
 .bottom-map {
   height: 300px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .total-workout-chart {
@@ -34,19 +39,19 @@
   height: 180px !important;
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
 }
 
 .total-workout-chart canvas {
-  padding-bottom: 15px
+  padding-bottom: 15px;
 }
 
 .chart-container h3 {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .charts {
-  background-color: #e4e4e4
+  background-color: #e4e4e4;
 }
 
 .workout-text {
@@ -60,148 +65,312 @@
   text-align: center;
   z-index: 1;
   font-size: 20px;
-  font-weight: 700;
-  color: #158b7e
+  color: #158b7e;
 }
 
 .calories-burned,
 .heart-rate-chart {
   max-height: 250px;
-  height: 180px !important
+  height: 180px !important;
 }
 
 .calories-burned h3,
 .heart-rate-chart h3 {
-  margin: 0 0 10px
+  margin: 0 0 10px;
 }
 
 .heart-rate-chart {
-  max-width: 275px
+  max-width: 275px;
 }
 
-@media (max-width:1500px) {
-  .top-charts>div {
+@media (max-width: 1500px) {
+  .fitness-chart {
+    min-width: 690px;
+  }
+  .top-charts > div {
     flex: 1;
     min-width: 250px;
-    max-width: 300px
+    max-width: 300px;
   }
-
   .middle-charts,
   .top-charts {
-    gap: 15px
+    gap: 15px;
   }
-
   .calendar-wrapper,
   .chart-container {
-    padding: 15px
+    padding: 15px;
   }
-
   .bottom-map {
-    height: 250px
+    height: 250px;
+  }
+}
+@media (max-width: 1350px) {
+  .fitness-chart {
+    min-width: 60%;
+  }
+}
+@media (max-width: 1270px) {
+  .fitness-chart {
+    min-width: 55%;
+  }
+}
+@media (max-width: 1180px) {
+  .fitness-chart {
+    min-width: 50%;
+  }
+}
+@media (max-width: 1090px) {
+  .fitness-chart {
+    min-width: 45%;
+  }
+}
+@media (max-width: 992px) {
+  .top-charts > div {
+    flex: 1;
+    min-width: 250px;
+  }
+  .fitness-chart {
+    min-width: 40%;
+  }
+  .middle-charts,
+  .top-charts {
+    flex-direction: column;
+  }
+  .calendar-wrapper,
+  .chart-container {
+    padding: 10px;
+  }
+  .bottom-map {
+    height: 200px;
   }
 }
 
-@media (max-width:992px) {
-  .top-charts>div {
+@media (max-width: 768px) {
+  .middle-charts > div,
+  .top-charts > div {
     flex: 1;
-    min-width: 250px
+    min-width: 250px;
+    max-width: 350px;
   }
-
-  .middle-charts,
-  .top-charts {
-    flex-direction: column
-  }
-
   .calendar-wrapper,
   .chart-container {
-    padding: 10px
+    padding: 5px;
   }
-
-  .bottom-map {
-    height: 200px
-  }
-}
-
-@media (max-width:768px) {
-
-  .middle-charts>div,
-  .top-charts>div {
-    flex: 1;
-    min-width: 250px
-  }
-
-  .calendar-wrapper,
-  .chart-container {
-    padding: 5px
-  }
-
   .total-workout-chart {
-    max-height: 200px
+    max-height: 200px;
   }
-
   .calories-burned,
   .heart-rate-chart {
     max-height: 200px;
-    height: 150px !important
+    height: 150px !important;
   }
-
   .bottom-map {
-    height: 150px
+    height: 150px;
   }
-
   .workout-text {
-    font-size: 18px
+    font-size: 18px;
+  }
+  .middle-charts > div {
+    align-self: center;
   }
 }
 
-@media (max-width:576px) {
+.chart-date-dropdown,
+.chart-dropdown {
+  font-size: 16px;
+  color: #666;
+}
 
-  .middle-charts>div,
-  .top-charts>div {
+@media (max-width: 576px) {
+  .middle-charts > div,
+  .top-charts > div {
     flex: 1;
     min-width: 250px;
-    max-width: 340px
+    max-width: 340px;
+  }
+  .chart-wrapper {
+    padding: 0 0 15px;
+  }
+  .middle-charts,
+  .top-charts {
+    gap: 20px;
+  }
+  .calendar-wrapper,
+  .chart-container {
+    padding: 5px;
+  }
+  .total-workout-chart {
+    max-height: 200px;
+    height: 120px !important;
+  }
+  .total-workout-chart h3 {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+  .total-workout-chart canvas {
+    max-width: 140px;
+    align-self: center;
+  }
+  .workout-text {
+    font-size: 16px;
+  }
+  .bottom-map {
+    min-height: 200px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 430px) {
+  .middle-charts > div,
+  .top-charts > div {
+    flex: 1;
+    min-width: 60%;
+    max-width: 70%;
+  }
+  .bottom-map {
+    height: 200px;
+    width: 70%;
+  }
+}
+
+.chart-container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* max-width: 600px; */
+  margin: auto;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.chart-dropdown {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.chart-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.chart-button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.chart-button.active {
+  background: #00796b;
+  color: #fff;
+  border-color: #00796b;
+}
+
+.chart-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.calendar-header button {
+  background: 0 0;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-day,
+.calendar-day-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  height: 40px;
+}
+
+.calendar-day.empty {
+  visibility: hidden;
+}
+
+.calendar-date {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.calendar-date.marked {
+  background-color: #009688;
+  color: #fff;
+}
+@media (max-width: 500px) {
+  .middle-charts > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .chart-container h3,
+  .calendar-header {
+    font-size: 16px;
+  }
+
+  .chart-container .chart-button {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .calendar-grid .calendar-day-name,
+  .calendar-grid .calendar-day,
+  .calendar-date {
+    font-size: 12px;
+    height: 30px;
+  }
+
+  .calendar-date {
+    width: 24px;
+    height: 24px;
   }
 
   .chart-wrapper {
-    padding: 0 0 15px
+    padding: 0 0 10px;
   }
-
-  .middle-charts,
-  .top-charts {
-    gap: 20px
-  }
-
-  .calendar-wrapper,
-  .chart-container {
-    padding: 5px
-  }
-
-  .total-workout-chart {
-    max-height: 200px;
-    height: 120px !important
-  }
-
-  .total-workout-chart canvas {
-    max-width: 140px;
-    align-self: center
-  }
-
-  .calories-burned {
-    max-height: 220px;
-    height: 120px !important
-  }
-
-  .heart-rate-chart {
-    min-height: 180px;
-    min-width: 400px
-  }
-
-  .bottom-map {
-    height: 120px
-  }
-
-  .workout-text {
-    font-size: 16px
-  }
+  /* .chart-dropdown {
+     max-width: 50%;
+  } */
 }
