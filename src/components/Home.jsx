@@ -5,6 +5,7 @@ import GoalsChart from "./GoalsChart";
 import Header from "./Header";
 import "./Home.css";
 import Dashboard from "./Dashboard/Dashboard";
+import Workouts from "./workouts/Workouts";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("Dashboard");
@@ -21,10 +22,9 @@ function Home() {
             </div>
           )}
           {activeTab === "Workouts" && (
-            <div className="charts">
-              {/* Add components related to Workouts */}
-              <h2 className="header-2">Workouts Content</h2>
-            </div>
+            // <div className="charts">
+            <Workouts />
+            // </div>
           )}
           {activeTab === "Goals" && (
             <div className="charts">
