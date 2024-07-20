@@ -3,7 +3,7 @@ import TotalWorkoutChart from "./TotalWorkoutChart";
 import CaloriesBurnedChart from "./CaloriesBurnedChart";
 import HeartRateChart from "./HeartRateChart";
 import FitnessGoalsChart from "./FitnessGoalsChart";
-import Calendar from "react-calendar";
+import CustomCalendar from "./Calendar";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "react-calendar/dist/Calendar.css";
 import "./Dashboard.css";
@@ -22,7 +22,7 @@ function Dashboard() {
         <div className="middle-charts">
           <FitnessGoalsChart />
           <div className="calendar-wrapper">
-            <Calendar />
+            <CustomCalendar />
           </div>
         </div>
       </div>
