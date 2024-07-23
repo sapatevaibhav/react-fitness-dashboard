@@ -1,0 +1,102 @@
+.profile {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  background-color: #e4e4e4;
+  padding: 20px;
+}
+
+.profile-card,
+.stats-card,
+.chart-card,
+.overall-fitness-card,
+.workout-plan-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-card {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.stats-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chart-card {
+  grid-column: 2 / span 2;
+}
+
+.workout-plan-card {
+  position: relative;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.profile-level {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.edit-profile-btn,
+.profile-btn,
+.workout-plan-btn {
+  background-color: #2d9cdb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.stats-text {
+  text-align: left;
+}
+
+.stats-title {
+  font-size: 1em;
+  color: gray;
+}
+
+.stats-value {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.workout-plan-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.workout-plan-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
