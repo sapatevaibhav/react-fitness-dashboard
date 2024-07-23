@@ -29,16 +29,24 @@ const CaloriesBurnedChart = () => {
         display: false,
       },
     },
-    y: {
-      ticks: {
-        stepSize: 2,
+    scales: {
+      y: {
+        ticks: {
+          stepSize: 2,
+        },
       },
     },
   };
 
   return (
-    <div className="chart">
+    <div className="chart calories-burned-chart">
+      <div>
+        <h3>calories burned</h3>
+      </div>
       <Line data={data} options={options} />
+      {/* <div className="calories-text">
+        <small>calories burned</small>
+      </div> */}
     </div>
   );
 };
