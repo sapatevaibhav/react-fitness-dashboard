@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProfileCard.css";
 
 const ProfileCard = () => {
   return (
@@ -14,4 +15,5 @@ const ProfileCard = () => {
     </div>
   );
 };
+
 export default ProfileCard;
