@@ -22,6 +22,13 @@ const DurationChart = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: "bottom",
+        align: "start",
+        labels: { usePointStyle: true, pointStyle: "rect" },
+      },
+    },
   };
 
   return (
