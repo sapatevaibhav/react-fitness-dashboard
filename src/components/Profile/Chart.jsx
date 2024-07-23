@@ -7,7 +7,7 @@ const ProfChart = () => {
     datasets: [
       {
         label: "Fitness",
-        data: [20, 40, 45, 35, 55, 60],
+        data: [25, 40, 55, 45, 60, 65],
         borderColor: "#2D9CDB",
         tension: 0.1,
         fill: false,
@@ -32,15 +32,18 @@ const ProfChart = () => {
       },
       y: {
         beginAtZero: true,
+        grid: {
+          display: false,
+        },
+        ticks: {
+          stepSize: 20,
+        },
       },
     },
   };
 
   return (
-    <div
-      className="chart-container"
-      style={{ height: "400px", width: "400px" }}
-    >
+    <div style={{ height: "100%", width: "100%" }}>
       <Line data={data} options={options} />
     </div>
   );
