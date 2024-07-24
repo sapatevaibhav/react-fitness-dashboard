@@ -5,14 +5,14 @@
   gap: 20px;
   background-color: #e4e4e4;
   padding: 20px;
+  padding-top: 30px;
 }
 
 .stats-card,
 .chart-card,
-.overall-fitness-card,
-.workout-plan-card {
+.overall-fitness-card {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   text-align: center;
 }
@@ -26,29 +26,25 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  max-height: 150px;
+}
+
+.overall-fitness-card {
+  grid-column: 2 / span 2;
 }
 
 .chart-card {
   grid-column: 2 / span 2;
+  max-height: 200px;
 }
 
-.workout-plan-card {
-  position: relative;
-}
-
-.workout-plan-btn {
-  background-color: #2d9cdb;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 5px 0;
-  cursor: pointer;
+.chart-card canvas {
+  margin: 20px 10px;
 }
 
 .stats-icon {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .stats-text {
@@ -65,14 +61,96 @@
   font-weight: bold;
 }
 
-.workout-plan-img {
-  width: 100%;
-  border-radius: 10px;
+.stats-value,
+.stats-title {
+  margin: 0px;
 }
 
-.workout-plan-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .profile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile-card {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .overall-fitness-card,
+  .chart-card {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card,
+  .overall-fitness-card,
+  .chart-card {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+  }
+
+  .stats-card {
+    flex-direction: column;
+  }
+
+  .stats-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .stats-title {
+    font-size: 0.9em;
+  }
+
+  .stats-value {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 600px) {
+  .chart-card,
+  .overall-fitness-card,
+  .stats-card {
+    max-width: 350px;
+    max-height: 200px;
+    width: 90%;
+    padding: 10px;
+  }
+  .stats-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (max-width: 525px) {
+  .chart-card,
+  .overall-fitness-card,
+  .stats-card {
+    max-width: 300px;
+    max-height: 150px;
+    width: 60%;
+    padding: 10px;
+  }
+  .stats-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .chart-card,
+  .overall-fitness-card,
+  .stats-card {
+    max-width: 200px;
+    max-height: 100px;
+    padding: 5px;
+  }
+  .stats-icon {
+    height: 50px;
+    width: 50px;
+  }
 }

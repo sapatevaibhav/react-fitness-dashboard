@@ -1,56 +1,111 @@
 .profile-card {
-  background-color: white;
+  background-color: #fff;
   border-radius: 15px;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: auto;
 }
-
+.edit-profile-btn,
+.profile-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  border: 1px solid #000;
 }
-
 .profile-name {
   font-size: 1.5em;
-  margin: 10px 0;
+  margin: 0;
   text-transform: capitalize;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .profile-level {
   color: gray;
-  margin-bottom: 20px;
+  margin: 0 0 10px;
 }
-
 .edit-profile-btn {
-  background-color: white;
-  color: #008080;
-  border: 2px solid #008080;
+  background-color: #fff;
+  font-weight: 700;
+  border: 2px solid teal;
   border-radius: 25px;
-  padding: 10px 20px;
   margin: 10px 0;
-  cursor: pointer;
-  width: calc(100% - 40px);
+  width: calc(100% - 15px);
 }
-
 .profile-buttons {
   display: flex;
   justify-content: space-between;
 }
-
 .profile-btn {
-  background-color: #008080;
-  color: white;
+  background-color: teal;
+  color: #fff;
   border: none;
   border-radius: 25px;
-  padding: 10px 20px;
-  cursor: pointer;
   flex: 1;
   margin: 0 5px;
+}
+@media (max-width: 750px) {
+  .profile-card {
+    max-width: 90%;
+    margin: 0;
+  }
+}
+@media (max-width: 550px) {
+  .profile-card {
+    max-width: 60%;
+    margin: 0;
+  }
+  .profile-img {
+    height: 175px;
+    width: 175px;
+  }
+}
+@media (max-width: 450px) {
+  .profile-card {
+    max-width: 50%;
+    margin: 0;
+  }
+  .profile-img {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (max-width: 400px) {
+  .profile-card {
+    max-width: 50%;
+    margin: 0;
+  }
+  .profile-img {
+    height: 100px;
+    width: 100px;
+  }
+  .edit-profile-btn {
+    max-width: 100px;
+  }
+  .profile-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .profile-card {
+    max-width: 47%;
+    margin: 0;
+  }
+  .profile-img {
+    height: 100px;
+    width: 100px;
+  }
+  .edit-profile-btn {
+    max-width: 100px;
+  }
+  .profile-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

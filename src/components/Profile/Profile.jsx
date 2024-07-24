@@ -2,6 +2,7 @@ import React from "react";
 import "./Profile.css";
 import ProfChart from "./Chart.jsx";
 import ProfileCard from "./ProfileCard";
+import WorkoutPlanCard from "./WorkoutPlanCard";
 
 const Profile = () => {
   return (
@@ -28,14 +29,7 @@ const Profile = () => {
       <div className="chart-card">
         <ProfChart />
       </div>
-      <div className="workout-plan-card">
-        <img
-          src="/assets/girl.png"
-          alt="Workout Plan"
-          className="workout-plan-img"
-        />
-        <button className="workout-plan-btn">make a workout plan now !!</button>
-      </div>
+      <WorkoutPlanCard />
       <div className="overall-fitness-card">
         <h3>overall fitness</h3>
       </div>
