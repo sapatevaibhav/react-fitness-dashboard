@@ -88,4 +88,26 @@
   .text-container {
     flex: 1;
   }
+  .progress-chart {
+    padding: 20px 0 !important;
+    max-width: 340px !important;
+  }
+}
+@media (max-width: 475px) {
+  .progress-chart {
+    padding: 20px 0 !important;
+    max-width: 275px !important;
+  }
+}
+@media (max-width: 450px) {
+  .progress-chart {
+    padding: 20px 0 !important;
+    max-width: 250px !important;
+  }
+}
+@media (max-width: 380px) {
+  .progress-chart {
+    padding: 20px 0 !important;
+    max-width: 200px !important;
+  }
 }

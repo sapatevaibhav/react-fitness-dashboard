@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
-import ProgressChart from "./ProgressChart";
-import GoalsChart from "./GoalsChart";
 import Header from "./Header";
 import "./Home.css";
 import Dashboard from "./Dashboard/Dashboard";
 import Workouts from "./workouts/Workouts";
 import Profile from "./Profile/Profile";
+import Goals from "./Goals/Goals";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("Dashboard");
@@ -27,19 +26,7 @@ function Home() {
             <Workouts />
             // </div>
           )}
-          {activeTab === "Goals" && (
-            <div className="charts">
-              <div className="progress-chart">
-                <h2 className="header-2">Progress</h2>
-                <div className="main-chart">
-                  <ProgressChart />
-                </div>
-              </div>
-              <div className="goals-chart">
-                <GoalsChart />
-              </div>
-            </div>
-          )}
+          {activeTab === "Goals" && <Goals />}
           {activeTab === "Profile" && (
             // <div className="charts">
             <Profile />
