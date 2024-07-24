@@ -95,6 +95,11 @@
   }
 }
 
+@media (max-width: 950px) {
+  .greeting p {
+    display: none;
+  }
+}
 @media (max-width: 785px) {
   .greeting h1 {
     font-size: 3vw;
